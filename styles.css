@@ -1,0 +1,330 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    
+}
+a {
+   color: white;
+   text-decoration: none; 
+}
+html {
+    font-size: 62.5%;
+}
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    font-size: 3rem;
+    background-image: linear-gradient(90deg, black 30%, Maroon, DarkRed);
+    color:white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+
+  
+}
+#header-img {
+    position: absolute;
+display:none;
+    
+}
+header p {
+    margin: 2rem 0;
+    font-size: 3rem
+}
+.navlists {
+    display: flex;
+    flex-flow: row wrap;
+  
+}
+.navlists li {
+    margin: 2rem 2rem
+}
+main {
+    margin-top: 15rem;
+    text-align: center;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr min(90%,1200px) 1fr;
+    justify-content: center;
+   
+   
+}
+label {
+    display: block;
+    font-size: 5rem;
+    font-weight: 600;margin-bottom: 3rem;
+}
+input[type="email"] {
+    width: min(80%, 600px);
+    background-color: Maroon;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding-left: 5px;
+    margin: 1rem 1rem 1rem 1rem;
+    color: white;
+    height: 40px;
+    
+    
+    
+  
+}
+input[type="email"]::placeholder{
+    color: white;
+   
+}
+input[type="email"]:hover{
+    background-color: black;
+   
+}
+input[type="submit"] {
+    color: white;
+    width: min(80%, 600px);
+    background-color: Maroon;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 0 5px;
+    transition: background-color 0.5s, color 0.2s;
+    margin: 1rem 1rem 3rem 1rem;
+    height: 40px;
+}
+
+input[type="submit"]:hover {
+
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+ 
+   
+}
+input[type="submit"]:active {
+
+    color: maroon;
+    background-color: black;
+    border: 2px solid maroon;
+ 
+   
+}
+body {
+    background-color: black;
+}
+img {
+    width: min(100%, 1200px);
+    grid-column: 2/3;
+    justify-self: center;
+}
+form{
+    grid-column: 2/3;
+   
+   
+
+}
+.feah1 {
+    font-size: 5rem;
+    margin-top: 2rem;
+    text-align: left;
+    
+}
+.Features {
+    grid-column: 2/ 3;
+
+
+}
+p, .materials {
+    font-size: 2rem;
+    text-align: justify;
+    
+}
+hr {
+    width: 100%;
+    grid-column: 2/ 3;
+    border: 1px solid white;
+    margin: 5rem 0 0;
+  }
+.h1 {
+    grid-column: 2/ 3;
+    font-size: 5rem;
+    margin:  5rem  2rem  5rem 2rem;
+}
+iframe {
+    grid-column: 2/ 3;
+    justify-self: center;
+    width: min(100%, 1200px);
+    height: 45vw;
+    max-height: 700px;
+    border: 3px solid white;
+    border-radius: 5px
+
+   
+}
+.productcont {
+    grid-column: 2/ 3;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.product {
+    height: 400px;
+    width: 350px;
+    background-image: linear-gradient(
+        maroon 0%,
+        maroon 20%,
+        black 20%,
+        black 100%
+    );
+    margin: 1rem;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border: 3px solid maroon;
+    
+    
+
+
+
+}
+.product .img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    overflow: hidden;
+    background-color: black;
+    
+
+    
+
+}
+.product .Mustang {
+    position: relative;
+    top: -70px;
+    
+    
+
+
+}
+.product .telecaster {
+    position: relative;
+    transform: rotate(20deg);
+   
+
+
+
+}
+.buy {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row-reverse nowrap;
+    width: 100%;
+    border-top: 3px solid maroon;
+
+
+    
+}
+.buy input {
+    width: 50%;
+    margin: 1rem;
+    background-color: maroon;
+    border: 1px solid maroon;
+    border-radius: 5px;
+    color: white;
+    font-size: rem;
+}
+.buy p {
+    margin: 1rem;
+    font-size: 3rem;
+}
+.product h3 {
+    font-size: 3rem;
+    margin: 2rem
+}
+input[type="button"]:hover {
+
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+ 
+   
+}
+input[type="button"]:active {
+
+    color: maroon;
+    background-color: black;
+    border: 2px solid maroon;
+ 
+   
+}
+
+.footer {
+    
+    display: flex;
+    justify-content: end;
+    flex-flow: row nowrap;
+    background-color: MAROON;
+    font-size: 3REM;
+    padding-right: 10%;
+    width: 100%
+}
+.footer li {
+    margin: 2rem 2rem;
+}
+#top {
+    position: absolute;
+    top: 0;
+}
+@media (max-width: 1233px) {
+    .productcont {
+       
+        justify-content: center;
+       
+    }
+
+
+.footer {
+     padding: 0;
+    font-size: 2REM;
+    justify-content: center;
+   
+}
+header {   
+    font-size: 2rem;  
+}
+header p {
+   
+    font-size: 2rem
+}
+.feah1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    
+}
+
+p, .materials {
+    font-size: 1.5rem;
+    text-align: justify;
+    
+}
+
+.h1 {
+   
+    font-size: 3rem;
+    margin:  3rem  2rem  3rem 2rem;
+}
+form label {
+    font-size: 3rem;
+}
+}
+@media (max-width: 437px) {
+    header {
+  
+    background-image: linear-gradient( black 30%, Maroon, DarkRed);
+   
+
+  
+};
+}
